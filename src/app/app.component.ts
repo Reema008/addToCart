@@ -46,7 +46,7 @@ export class AppComponent {
   }
 
   delByID(num,amt){
-    this.cart = this.cart.filter((items) => items.id !== num);
+    this.cart = this.cart.splice(num,1);
     this.total=this.total-amt;
   }
   
